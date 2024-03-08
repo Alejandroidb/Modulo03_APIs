@@ -15,27 +15,32 @@
   <body>
     <div class="container">
       <h1 class="titulo">Conversor de moneda</h1>
-      <hr>
+      <hr />
       <div class="input">
-        <label for="monto">Ingresar Monto</label>
-        <input type="number" id="monto" placeholder="Ingresar Monto">
+        <label for="monto">Ingresar Monto CLP</label>
+        <input type="number" id="monto" placeholder="Ingresar Monto" />
       </div>
-<div class="seleccion">
-    <label for="moneda">Selecciona la moneda</label>
-    <select name="moneda" id="moneda" class="moneda">
-        <option value="dolar">Dólar</option>
-        <option value="uf">Uf</option>
-        <option value="euro">Euro</option>
-        <option value="utm">Utm</option>
-    </select>
-    <button id="calcular">Calcular</button>
-
-</div>
-<div>
-    <h3>Resultado</h3>
-    <p class="resultado" id="resultado"></p>
-</div>
+      <div class="seleccion">
+        <label for="moneda">Selecciona la moneda</label>
+        <select name="moneda" id="moneda" class="moneda">
+          <option value="dolar">Dólar</option>
+          <option value="uf">Uf</option>
+          <option value="euro">Euro</option>
+          <option value="utm">Utm</option>
+        </select>
+        <button id="calcular">Calcular</button>
+      </div>
+      <div>
+        <h3>Resultado</h3>
+        <p class="resultado" id="resultado"></p>
+      </div>
     </div>
+    <div class="myChart">
+      <h2>Valor de los Ultimos 10 Días</h2>
+      <canvas id="myChart"></canvas>
+    </div>
+
     <script src="./assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   </body>
 </html>

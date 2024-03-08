@@ -37,3 +37,11 @@ button {
   margin-left: 40%;
   margin-right: 40%;
 }
+.myChart {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 600px;
+  height: 400px;
+  margin-left: 25%;
+}
